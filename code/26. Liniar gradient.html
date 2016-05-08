@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow); /* Standard syntax (must be last) */
+}
+
+#grad2 {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left, red , yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, red , yellow); /* Standard syntax (must be last) */
+}
+
+#grad3 {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, red, yellow); /* Standard syntax (must be last) */
+}
+
+#grad4 {
+    height: 100px;
+    background: red; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(0deg, red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(0deg, red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(0deg, red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(0deg, red, yellow); /* Standard syntax (must be last) */
+}
+
+#grad5 {
+    height: 100px;
+    background: red; /* For browsers that do not support gradients */        
+    background: -webkit-linear-gradient(90deg, red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, red, yellow); /* Standard syntax (must be last) */
+}
+
+#grad6 {
+    height: 100px;
+    background: red; /* For browsers that do not support gradients */        
+    background: -webkit-linear-gradient(180deg, red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, red, yellow); /* Standard syntax (must be last) */
+}
+
+#grad7 {
+    height: 100px;
+    background: red; /* For browsers that do not support gradients */        
+    background: -webkit-linear-gradient(-90deg, red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, red, yellow); /* Standard syntax (must be last) */
+}
+
+#grad8 {
+    height: 200px;
+    background: -webkit-linear-gradient(red, yellow, green); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow, green); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow, green); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow, green); /* Standard syntax (must be last) */
+}
+
+#grad9 {
+    height: 200px;
+    background: -webkit-linear-gradient(red 10%, green 85%, blue 90%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red 10%, green 85%, blue 90%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red 10%, green 85%, blue 90%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red 10%, green 85%, blue 90%); /* Standard syntax (must be last) */
+}
+
+#grad10 {
+    height: 200px;
+    background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* Standard syntax (must be last) */
+}
+
+#grad11 {
+    height: 200px;
+    background: -webkit-repeating-linear-gradient(red, yellow 10%, green 20%); /* For Safari 5.1 to 6.0 */
+    background: -o-repeating-linear-gradient(red, yellow 10%, green 20%); /* For Opera 11.1 to 12.0 */
+    background: -moz-repeating-linear-gradient(red, yellow 10%, green 20%); /* For Firefox 3.6 to 15 */
+    background: repeating-linear-gradient(red, yellow 10%, green 20%); /* Standard syntax (must be last) */
+}
+
+#grad12 {
+    height: 200px;
+    background: -webkit-repeating-linear-gradient(45deg,red,yellow 7%,green 10%); /* For Safari 5.1 to 6.0 */
+    background: -o-repeating-linear-gradient(45deg,red,yellow 7%,green 10%); /* For Opera 11.1 to 12.0 */
+    background: -moz-repeating-linear-gradient(45deg,red,yellow 7%,green 10%); /* For Firefox 3.6 to 15 */
+    background: repeating-linear-gradient(45deg,red,yellow 7%,green 10%); /* Standard syntax (must be last) */
+}
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradient
+<h3>Linear Gradient - Top to Bottom</h3>
+<p>This linear gradient starts at the top. It starts red, transitioning to yellow:</p>
+
+<div id="grad1"></div>
+
+<br>
+<h3>Linear Gradient - Left to Right</h3>
+<p>This linear gradient starts at the left. It starts red, transitioning to yellow:</p>
+
+<div id="grad2"></div>
+
+<br>
+<h3>Linear Gradient - Diagonal</h3>
+<p>This linear gradient starts at top left. It starts red, transitioning to yellow:</p>
+
+<div id="grad3"></div>
+<br>
+<h3>Linear Gradients - Using Different Angles</h3>
+<div id="grad4" style="color:white;text-align:center;">0deg</div><br>
+<div id="grad5" style="color:white;text-align:center;">90deg</div><br>
+<div id="grad6" style="color:white;text-align:center;">180deg</div><br>
+<div id="grad7" style="color:white;text-align:center;">-90deg</div>
+<br>
+<h3>3 Color Stops (evenly spaced)</h3>
+<div id="grad8"></div>
+<p><strong>Note:</strong> Color stops are automatically spaced evenly when no percents are specified.</p>
+<br>
+<h3>3 Color Stops (not evenly spaced)</h3>
+<div id="grad9"></div>
+<br>
+<br>
+<h3>Linear Gradient - Transparency</h3>
+<p>To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency).</p>
+<div id="grad10"></div>
+<br>
+<h3>Repeating Linear Gradient</h3>
+
+<div id="grad11"></div>
+
+<p>A repeating gradient on 45deg axe starting red and finishing green:</p>
+<div id="grad12"></div>
+
+</body>
+</html>

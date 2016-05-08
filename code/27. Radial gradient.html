@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+    height: 150px;
+    width: 200px;
+    background: -webkit-radial-gradient(red, yellow, green); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(red, yellow, green); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(red, yellow, green); /* For Fx 3.6 to 15 */
+    background: radial-gradient(red, yellow, green); /* Standard syntax (must be last) */
+}
+
+#grad2 {
+    height: 150px;
+    width: 200px;
+    background: -webkit-radial-gradient(circle, red, yellow, green); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(circle, red, yellow, green); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(circle, red, yellow, green); /* For Fx 3.6 to 15 */
+    background: radial-gradient(circle, red, yellow, green); /* Standard syntax (must be last) */
+}
+
+#grad3 {
+    height: 150px;
+    width: 150px;
+    background: -webkit-radial-gradient(60% 55%, closest-side, red, yellow, black); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(60% 55%, closest-side, red, yellow, black); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(60% 55%, closest-side, red, yellow, black); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(closest-side at 60% 55%, red, yellow, black); /* Standard syntax (must be last) */
+}
+
+#grad4 {
+    height: 150px;
+    width: 150px;
+    background: -webkit-radial-gradient(60% 55%, farthest-side, red, yellow, black); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(60% 55%, farthest-side, red, yellow, black); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(60% 55%, farthest-side, red, yellow, black); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(farthest-side at 60% 55%, red, yellow, black); /* Standard syntax (must be last) */
+}
+
+#grad5 {
+    height: 150px;
+    width: 150px;
+    background: -webkit-radial-gradient(60% 55%, closest-corner, red, yellow, black); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(60% 55%, closest-corner, red, yellow, black); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(60% 55%, closest-corner, red, yellow, black); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(closest-corner at 60% 55%, red, yellow, black); /* Standard syntax (must be last) */
+}
+
+#grad6 {
+    height: 150px;
+    width: 150px;
+    background: -webkit-radial-gradient(60% 55%, farthest-corner, red, yellow, black); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(60% 55%, farthest-corner, red, yellow, black); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(60% 55%, farthest-corner, red, yellow, black); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(farthest-corner at 60% 55%, red, yellow, black); /* Standard syntax (must be last) */
+}
+
+#grad7 {
+    height: 150px;
+    width: 200px;
+    background: -webkit-repeating-radial-gradient(red, yellow 10%, green 15%); /* For Safari 5.1 to 6.0 */
+    background: -o-repeating-radial-gradient(red, yellow 10%, green 15%); /* For Opera 11.6 to 12.0 */
+    background: -moz-repeating-radial-gradient(red, yellow 10%, green 15%); /* For Firefox 3.6 to 15 */
+    background: repeating-radial-gradient(red, yellow 10%, green 15%); /* Standard syntax (must be last) */
+}
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+<h3>Radial Gradient - Shapes</h3>
+
+<p><strong>Ellipse (this is default):</strong></p>
+<div id="grad1"></div>
+
+<p><strong>Circle:</strong></p>
+<div id="grad2"></div>
+
+<br>
+
+<h3>Radial Gradients - Use of different size keywords</h3>
+
+<p><strong>closest-side:</strong></p>
+<div id="grad3"></div>
+
+<p><strong>farthest-side:</strong></p>
+<div id="grad4"></div>
+
+<p><strong>closest-corner:</strong></p>
+<div id="grad5"></div>
+
+<p><strong>farthest-corner (this is default):</strong></p>
+<div id="grad6"></div>
+<br>
+<h3>Repeating Radial Gradient</h3>
+
+<div id="grad7"></div>
+</body>
+</html>
